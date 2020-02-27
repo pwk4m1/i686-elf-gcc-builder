@@ -44,8 +44,8 @@ command -v wget >/dev/null 2>&1 || {
 }
 
 command -v sudo >/dev/null 2>&1 || { 
-	"sudo not installed, modify the script and run make install-gcc 
-	and make install-target-libgcc manually"; 
+	echo "sudo not installed, modify the script and run make install-gcc" 
+	echo "and make install-target-libgcc manually"; 
 	exit 1;
 } 
 
