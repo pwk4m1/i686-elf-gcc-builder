@@ -52,11 +52,13 @@ command -v sudo >/dev/null 2>&1 || {
 
 
 # binutils and gcc version
-export BINUTILS_VERSION="2.29"
-export GCC_VERSION="7.2.0"
+export BINUTILS_VERSION="2.36"
+export GCC_VERSION="10.0.0"
 
 export PREFIX="$HOME/opt/cross"
-export TARGET=mips-elf
+echo "Change target!";
+exit 1;
+export TARGET=CHANGEME;
 export PATH="$PREFIX/bin:$PATH"
 
 echo "Obtaining binutils and gcc..."
